@@ -42,12 +42,12 @@ interface TeamMember {
   image?: string;
 }
 
-// Update refs with proper types
-const projectsRef = useRef<HTMLElement>(null);
-const aboutRef = useRef<HTMLElement>(null);
-const teamRef = useRef<HTMLElement>(null);
-
 export default function Home() {
+  // Move refs inside the component
+  const projectsRef = useRef<HTMLElement>(null);
+  const aboutRef = useRef<HTMLElement>(null);
+  const teamRef = useRef<HTMLElement>(null);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0, 0.05], [1, 0]);
