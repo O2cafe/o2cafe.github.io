@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import nextConfig from "../next.config.mjs";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -21,16 +22,36 @@ import {
   AnimatePresence,
 } from "framer-motion";
 
+const BASE_PATH = nextConfig.basePath || "";
+
+// Add interfaces before the component definitions
+interface Project {
+  title: string;
+  type: string;
+  description: string;
+  image?: string;
+  tags: string[];
+  github?: string;
+  demo?: string;
+  category: string;
+}
+
+interface TeamMember {
+  name: string;
+  role: string;
+  image?: string;
+}
+
+// Update refs with proper types
+const projectsRef = useRef<HTMLElement>(null);
+const aboutRef = useRef<HTMLElement>(null);
+const teamRef = useRef<HTMLElement>(null);
+
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0, 0.05], [1, 0]);
   const scale = useTransform(scrollYProgress, [0, 0.05], [1, 0.98]);
-
-  // Refs for scroll animations
-  const projectsRef = useRef(null);
-  const aboutRef = useRef(null);
-  const teamRef = useRef(null);
 
   const [activeSection, setActiveSection] = useState("hero");
 
@@ -176,7 +197,7 @@ export default function Home() {
               >
                 <div className="relative h-[400px] w-[400px] overflow-hidden">
                   <Image
-                    src="/hero-image.png"
+                    src={`${BASE_PATH}/hero-image.png`}
                     alt="Abstract geometric shapes in black and white"
                     fill
                     className="object-cover"
@@ -472,7 +493,12 @@ export default function Home() {
 }
 
 // Project Card Component with Animation
-function ProjectCard({ project, index }) {
+interface ProjectCardProps {
+  project: Project;
+  index: number;
+}
+
+function ProjectCard({ project, index }: ProjectCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -487,7 +513,7 @@ function ProjectCard({ project, index }) {
           transition={{ type: "spring", stiffness: 300 }}
         >
           <Image
-            src={project.image || "/placeholder.svg"}
+            src={`${BASE_PATH}${project.image || "/placeholder.svg"}`}
             alt={project.title}
             fill
             className="object-cover transition-transform duration-300 hover:scale-105"
@@ -558,7 +584,12 @@ function ProjectCard({ project, index }) {
 }
 
 // Team Member Component with Animation
-function TeamMember({ member, index }) {
+interface TeamMemberProps {
+  member: TeamMember;
+  index: number;
+}
+
+function TeamMember({ member, index }: TeamMemberProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -573,7 +604,7 @@ function TeamMember({ member, index }) {
         transition={{ type: "spring", stiffness: 300 }}
       >
         <Image
-          src={member.image || "/placeholder.svg"}
+          src={`${BASE_PATH}${member.image || "/placeholder.svg"}`}
           alt={member.name}
           width={300}
           height={400}
@@ -599,7 +630,7 @@ function TeamMember({ member, index }) {
 }
 
 // Sample data for projects
-const projects = [
+const projects: Project[] = [
   {
     title: "Closed Currency",
     type: "Web Application",
@@ -614,7 +645,7 @@ const projects = [
 ];
 
 // Sample data for team members
-const teamMembers = [
+const teamMembers: TeamMember[] = [
   {
     name: "Saita08",
     role: "Founder & Creative Director",
