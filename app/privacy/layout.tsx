@@ -38,7 +38,7 @@ export default function PrivacyLayout({
 			<footer className="border-t py-8">
 				<div className="container mx-auto px-4 max-w-4xl">
 					<div className="text-center text-sm text-gray-500 dark:text-gray-400">
-						<p>© 2025 02Cafe. すべての権利を保有します。</p>
+						<p>© 2025 02Cafe</p>
 						<p className="mt-2">
 							このプライバシーポリシーに関するご質問は{" "}
 							<a
