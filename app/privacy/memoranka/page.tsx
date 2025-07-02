@@ -101,7 +101,7 @@ export default function MemorankaPrivacyPage() {
 						<div className="text-gray-600 dark:text-gray-400 leading-relaxed">
 							このアプリによる情報収集を止めたい場合は、アプリを削除してください。
 							<br />
-							スマートフォンの設定画面やアプリストアから、通常の方法でアプリを削除できます。
+							スマートフォンの設定画面から、通常の方法でアプリを削除できます。
 						</div>
 					</section>
 
