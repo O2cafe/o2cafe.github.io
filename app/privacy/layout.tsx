@@ -16,19 +16,19 @@ export default function PrivacyLayout({
 						<Link href="/">
 							<Button variant="ghost" size="sm" className="gap-2">
 								<ArrowLeft className="h-4 w-4" />
-								ホームに戻る
+								Home
 							</Button>
 						</Link>
 						<div className="h-6 w-px bg-gray-300 dark:bg-gray-700" />
 						<h1 className="text-lg font-semibold">
-							プライバシーポリシー
+							Privacy Policy
 						</h1>
 					</div>
 					<Link
 						href="/privacy"
 						className="text-sm text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
 					>
-						アプリ一覧
+						All Policies
 					</Link>
 				</div>
 			</header>
