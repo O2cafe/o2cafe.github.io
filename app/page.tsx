@@ -516,7 +516,7 @@ export default function Home() {
 						transition={{ duration: 0.5, delay: 0.2 }}
 					>
 						<Link
-							href="#"
+							href="/privacy"
 							className="text-xs text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
 						>
 							Privacy Policy
