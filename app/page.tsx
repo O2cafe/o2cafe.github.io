@@ -709,7 +709,7 @@ const teamMembers: TeamMember[] = [
 	{
 		name: "Saita08",
 		role: "Founder & Creative Director",
-		image: "/saita08-logo.png?height=400&width=300",
+		image: "/saita08-icon.png?height=400&width=300",
 	},
 	{
 		name: "Ck Ja",
