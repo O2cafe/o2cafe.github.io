@@ -33,10 +33,10 @@ export default function MemorankaPrivacyPage() {
 					<div className="flex items-center gap-2">
 						<Mail className="h-4 w-4" />
 						<a
-							href="mailto:o2cafedeveloper@gmail.com"
+							href="mailto:support@studio-o2cafe.com"
 							className="underline hover:text-gray-900 dark:hover:text-gray-50"
 						>
-							o2cafedeveloper@gmail.com
+							support@studio-o2cafe.com
 						</a>
 					</div>
 				</div>
@@ -187,10 +187,10 @@ export default function MemorankaPrivacyPage() {
 						<div>
 							Email:{" "}
 							<a
-								href="mailto:o2cafedeveloper@gmail.com"
+								href="mailto:support@studio-o2cafe.com"
 								className="underline"
 							>
-								o2cafedeveloper@gmail.com
+								support@studio-o2cafe.com
 							</a>
 						</div>
 						<div>担当: 02Cafe 開発チーム</div>

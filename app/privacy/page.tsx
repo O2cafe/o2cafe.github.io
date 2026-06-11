@@ -84,10 +84,10 @@ export default function PrivacyPage() {
 						プライバシーポリシーに関するご質問やご意見がございましたら、
 						お気軽に{" "}
 						<a
-							href="mailto:o2cafedeveloper@gmail.com"
+							href="mailto:support@studio-o2cafe.com"
 							className="underline"
 						>
-							o2cafedeveloper@gmail.com
+							support@studio-o2cafe.com
 						</a>{" "}
 						までお問い合わせください。
 					</p>

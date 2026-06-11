@@ -42,10 +42,10 @@ export default function PrivacyLayout({
 						<p className="mt-2">
 							このプライバシーポリシーに関するご質問は{" "}
 							<a
-								href="mailto:o2cafedeveloper@gmail.com"
+								href="mailto:support@studio-o2cafe.com"
 								className="underline hover:text-gray-900 dark:hover:text-gray-50"
 							>
-								o2cafedeveloper@gmail.com
+								support@studio-o2cafe.com
 							</a>{" "}
 							までお問い合わせください。
 						</p>

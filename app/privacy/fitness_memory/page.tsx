@@ -33,10 +33,10 @@ export default function FitnessMemoryPrivacyPage() {
 					<div className="flex items-center gap-2">
 						<Mail className="h-4 w-4" />
 						<a
-							href="mailto:o2cafedeveloper@gmail.com"
+							href="mailto:support@studio-o2cafe.com"
 							className="underline hover:text-gray-900 dark:hover:text-gray-50"
 						>
-							o2cafedeveloper@gmail.com
+							support@studio-o2cafe.com
 						</a>
 					</div>
 				</div>
@@ -47,11 +47,13 @@ export default function FitnessMemoryPrivacyPage() {
 					重要なお知らせ
 				</h3>
 				<p className="text-sm text-blue-800 dark:text-blue-200">
-					この文書は、スマートフォン用アプリ「Fitness Memory」に関するプライバシーポリシーであり、02Cafeによって作成されたものです。
+					この文書は、スマートフォン用アプリ「Fitness
+					Memory」に関するプライバシーポリシーであり、02Cafeによって作成されたものです。
 					<br />
 					本アプリは、現在提供されている機能・仕様のままご利用いただくことを前提としています。
 					<br />
-					Fitness Memoryは一切の個人情報を収集しないため、ユーザーのプライバシーは完全に保護されます。
+					Fitness
+					Memoryは一切の個人情報を収集しないため、ユーザーのプライバシーは完全に保護されます。
 				</p>
 			</div>
 
@@ -64,7 +66,8 @@ export default function FitnessMemoryPrivacyPage() {
 							個人情報の収集について
 						</h2>
 						<div className="text-gray-600 dark:text-gray-400 leading-relaxed">
-							Fitness Memoryは、アプリをダウンロードした時も使用中も、個人情報を一切収集しません。
+							Fitness
+							Memoryは、アプリをダウンロードした時も使用中も、個人情報を一切収集しません。
 							<br />
 							このアプリを使うために、ユーザー登録などの手続きは不要です。
 							<br />
@@ -208,10 +211,10 @@ export default function FitnessMemoryPrivacyPage() {
 						<div>
 							Email:{" "}
 							<a
-								href="mailto:o2cafedeveloper@gmail.com"
+								href="mailto:support@studio-o2cafe.com"
 								className="underline"
 							>
-								o2cafedeveloper@gmail.com
+								support@studio-o2cafe.com
 							</a>
 						</div>
 						<div>担当: 02Cafe 開発チーム</div>
